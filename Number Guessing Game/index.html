@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Guess the Number!</h1>
+
+        <!-- Player Name Input -->
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput" placeholder="Your name" />
+        <button onclick="startGame()">Confirm Player Name</button>
+
+        <!-- Display Player Name -->
+        <div id="playerDisplay" class="player-info"></div>
+
+        <!-- Game Instructions -->
+        <p>I'm thinking of a number between 1 and 100.</p>
+
+        <!-- Guess Input -->
+        <label for="guessInput">Your Guess:</label>
+        <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="100" />
+        <button onclick="checkGuess()">Submit Guess</button>
+
+        <!-- Feedback and Score -->
+        <p id="feedback"></p>
+        <p id="scoreDisplay">Here's Your Scoreboard!: 0</p>
+
+        <!-- Restart Button -->
+        <button onclick="restartGame()">Try Again? Restart Game!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
