@@ -2,84 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After School Club Finder</title>
+
+    <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Poppins:wght@300;600&family=Playfair+Display:wght@400;700&display=swap"
-        rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Schoolbell&family=Sue+Ellen+Francisco&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Add Basic SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Timeless and necessary high school clubs & after school activities. Delightful, endless options for students.">
+    <meta name="keywords" content="Timeless, necessary, high school, clubs, after school activities, students.">
+    <meta name="author" content="After School Club Finder">
+
+    <!-- Add Open Graph Meta Tags (for social media previews) -->
+    <meta property="og:title" content="After School Club Finder">
+    <meta property="og:description"
+        content="Timeless and necessary high school clubs & after school activities.Delightful, endless options for students.">
+    <meta property="og:image" content="https://katzp31.github.io/After-School-Club-Finder/clubfinder1200x630.jpg">
+    <meta property="og:url" content="https://katzp31.github.io/After-School-Club-Finder/">
+    <meta property="og:type" content=" website">
+
+
+    <!-- Add Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="After School Club Findere">
+    <meta name="twitter:title" content="After School Club Finder">
+    <meta name="twitter:description"
+        content="Timeless and necessary high school clubs & after school activities.Delightful, endless options for students.">
+    <meta name="twitter:image" content="https://katzp31.github.io/After-School-Club-Finder/clubfinder1200x600.jpg">
+
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/png" sizes="64x64" href="./64x64.png">
+
+
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <div class="nav-container">
-                <div class="logo">My Portfolio</div>
-                <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-                <ul class="navbar">
-                    <li><a href="#landing">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./ClubEssentials (3).png" alt="Logo">
             </div>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#supply">Club Finder</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#connect">Stay Connected</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="landing" class="section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my work and projects below.</p>
-    </section>
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1>YOU CAME TO THE RIGHT PLACE!</h1>
+                <p>Timeless and necessary high school clubs & after school activities.Delightful, endless options for
+                    students.</p>
+            </div>
+            <div class="home-image"></div>
+        </section>
 
-    <section id="projects" class="section">
-        <h2>My Projects</h2>
-        <div class="card-container">
+        <!-- SUPPLY FINDER SECTION -->
+        <section id="supply" class="supply-section">
+            <h1>Find Clubs. Compare Activities. Plan Your Schoolyear Ahead!</h1>
 
-            <div class="card">
-                <img src="./1.png" alt="Project 1 preview" />
-                <h3>Accessible Calculator</h3>
-                <p>This calculator is designed with accessibility in mind...</p>
-                <a href="./Accessible Calculator/" target="_blank" class="btn">View Project</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for club...">
+                <button>Search for Club...</button>
             </div>
 
-            <div class="card">
-                <img src="./2.png" alt="Project 2 preview" />
-                <h3>Leaderboard</h3>
-                <p>Compete against players from all around the globe in this exciting leaderboard-based game...</p>
-                <a href="./Leaderboard/" target="_blank" class="btn">View Project</a>
+            <div class="card-grid">
+                <div class="card">Item 1</div>
+                <div class="card">Item 2</div>
+                <div class="card">Item 3</div>
+                <div class="card">Item 4</div>
+                <div class="card">Item 5</div>
+                <div class="card">Item 6</div>
             </div>
 
-            <div class="card">
-                <img src="./3.png" alt="Project 3 preview" />
-                <h3>Loop Demonstration</h3>
-                <p>Explore how loops work with this interactive number demonstration...</p>
-                <a href="./Loop Demonstration/" target="_blank" class="btn">View Project</a>
+            <div class="pagination">
+                <button>Previous</button>
+                <span>1 of 5</span>
+                <button>Next</button>
             </div>
+        </section>
 
-            <div class="card">
-                <img src="./4.png" alt="Project 4 preview" />
-                <h3>Number Guessing Game</h3>
-                <p>Challenge yourself with a number guessing game that adjusts difficulty levels...</p>
-                <a href="./Number Guessing Game/" target="_blank" class="btn">View Project</a>
+        <!-- ABOUT US SECTION -->
+        <section id="about" class="about-section">
+            <h1>About Us</h1>
+            <div class="team">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="card">
-                <img src="./5.png" alt="Project 5 preview" />
-                <h3>Product Showcase</h3>
-                <p>Browse a sleek product catalog with detailed carts and vibrant images...</p>
-                <a href="./Product Showcase/" target="_blank" class="btn">View Project</a>
-            </div>
-
-            <div class="card">
-                <img src="./6.png" alt="Project 6 preview" />
-                <h3>Used Watches</h3>
-                <p>Discover a curated collection of quality pre-owned watches from top brands...</p>
-                <a href="./Used Watches/" target="_blank" class="btn">View Project</a>
-            </div>
-
+    <!-- FOOTER SECTION -->
+    <footer id="connect">
+        <div class="footer-logo">
+            <img src="./ClubEssentials (3).png" alt="Logo">
         </div>
-    </section>
+        <div class="footer-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at elit vel sapien posuere aliquet.
+            </p>
+        </div>
+        <div class="footer-social">
+            <p>Get Social with Us!</p>
+            <div class="icons">
+                <span>🌐</span>
+                <span>📘</span>
+                <span>🐦</span>
+                <a href="./Style Guide 09.30.25/" target="_blank">View Style Guide!</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
